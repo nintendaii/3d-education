@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
@@ -29,7 +30,6 @@ public class AppManager : MonoBehaviour
 
     [Header("Description Screen")] 
     [SerializeField] private Button startARModeButton = default;
-
     [SerializeField] private TMP_Text header;
     [SerializeField] private GameObject content3D;
     [SerializeField] private TMP_Text infoContent;
@@ -38,6 +38,7 @@ public class AppManager : MonoBehaviour
     [SerializeField] private GameObject earth = default;
 
     [SerializeField] private GameObject itemPrefab = default;
+    public GameObject current3dModel;
     void OnEnable()
     {
         mainScreen.SetActive(true);
@@ -60,12 +61,14 @@ public class AppManager : MonoBehaviour
         {
             btn.onClick.RemoveAllListeners();
         }
+        startARModeButton.onClick.RemoveAllListeners();
     }
 
     private void SubscribeEvents()
     {
         exploreButton.onClick.AddListener(OnExplorePress);
         categButtons[0].onClick.AddListener(OnAstroPress);
+        startARModeButton.onClick.AddListener(OnARModePress);
     }
 
     private void OnExplorePress()
@@ -103,16 +106,21 @@ public class AppManager : MonoBehaviour
         }
         header.text = item.Title;
         infoContent.text = item.Description;
+        current3dModel = item.Model;
         var it = Instantiate(item.Model);
         it.transform.SetParent(content3D.transform,false);
         it.SetActive(true);
     }
 
+    public void OnARModePress()
+    {
+        SceneManager.LoadScene("ARMode");
+        ARController.modelToSpawn = current3dModel;
+    }
+
     public void CreateAstroItems()
     {
         astroItems = new List<EducationItem>();
-        astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, "lorem ipsum blablabla"));
-        float[] arr = {1f, 1f, 1f};
-        earth.GetComponent<ObjectRotation>().vector = arr;
+        astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, ItemsInfo.earthInfo));
     }
 }
