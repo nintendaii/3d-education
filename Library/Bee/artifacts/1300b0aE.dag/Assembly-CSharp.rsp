@@ -112,8 +112,8 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll"
--r:"/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll"
+-r:"/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll"
+-r:"/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -341,6 +341,7 @@
 "Assets/Scripts/AppManager.cs"
 "Assets/Scripts/ARController.cs"
 "Assets/Scripts/EducationItem.cs"
+"Assets/Scripts/ItemsInfo.cs"
 "Assets/Scripts/ObjectRotation.cs"
 -langversion:8.0
 

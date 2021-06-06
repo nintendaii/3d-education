@@ -113,7 +113,7 @@
 -define:TEST_FRAMEWORK
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"

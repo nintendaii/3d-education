@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ARController
+    - AppManager
     - ObjectRotation
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -11,8 +12,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
+    Unity.XR.ARCore.dll:
+    - UnityEngine.XR.ARCore.ARCoreLoader
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
@@ -24,10 +28,27 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
     Unity.XR.ARKit.Editor.dll:
     - UnityEditor.XR.ARKit.ARKitSettings
+    Unity.XR.Management.Editor.dll:
+    - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    Unity.XR.Management.dll:
+    - UnityEngine.XR.Management.XRGeneralSettings
+    - UnityEngine.XR.Management.XRManagerSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/ARMode.unity:
     - Class: 1
@@ -48,8 +69,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 89
@@ -59,33 +78,98 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1646}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 2108}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 3116}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3542}
     - Class: 114
-      Script: {instanceID: 3538}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 3886}
+      Script: {instanceID: 6038}
     - Class: 114
-      Script: {instanceID: 4132}
+      Script: {instanceID: 6180}
     - Class: 114
-      Script: {instanceID: 4792}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 6754}
     - Class: 114
-      Script: {instanceID: 6034}
+      Script: {instanceID: 7240}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Main.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 6176}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 6690}
+      Script: {instanceID: 1572}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 2112}
     - Class: 114
-      Script: {instanceID: 7236}
+      Script: {instanceID: 2246}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2704}
+    - Class: 114
+      Script: {instanceID: 3124}
+    - Class: 114
+      Script: {instanceID: 3678}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4136}
+    - Class: 114
+      Script: {instanceID: 4796}
+    - Class: 114
+      Script: {instanceID: 5224}
+    - Class: 114
+      Script: {instanceID: 5302}
+    - Class: 114
+      Script: {instanceID: 5454}
+    - Class: 114
+      Script: {instanceID: 5754}
+    - Class: 114
+      Script: {instanceID: 6172}
+    - Class: 114
+      Script: {instanceID: 6180}
+    - Class: 114
+      Script: {instanceID: 6798}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -93,6 +177,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1177,5 +1269,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 13
   scenePathNames:
+  - Assets/Scenes/Main.unity
   - Assets/Scenes/ARMode.unity
-  playerPath: /Users/daniel/Documents/Projects/3DE/Builds/3DE.apk
+  playerPath: /Users/daniel/Documents/Projects/3d-education/Builds/3DE.apk

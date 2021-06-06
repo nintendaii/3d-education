@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARController : MonoBehaviour
 {
-    [SerializeField] private GameObject modelToSpawn;
+    [SerializeField] public static GameObject modelToSpawn;
     [SerializeField] private GameObject placementIndicator;
 
     private Pose placementPose;

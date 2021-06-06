@@ -5,12 +5,15 @@ apply plugin: 'com.android.library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'ARPresto', ext:'aar')
+    implementation(name: 'UnityARCore', ext:'aar')
+    implementation(name: 'arcore_client', ext:'aar')
     implementation(name: 'unityandroidpermissions', ext:'aar')
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -19,7 +22,7 @@ android {
 
     defaultConfig {
         minSdkVersion 26
-        targetSdkVersion 30
+        targetSdkVersion 29
         ndk {
             abiFilters 'armeabi-v7a'
         }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
@@ -38,6 +39,7 @@ public class AppManager : MonoBehaviour
     [SerializeField] private GameObject earth = default;
 
     [SerializeField] private GameObject itemPrefab = default;
+    private GameObject current3Dmodel = default;
     void OnEnable()
     {
         mainScreen.SetActive(true);
@@ -56,6 +58,7 @@ public class AppManager : MonoBehaviour
     private void UnsubscribeEvents()
     {
         exploreButton.onClick.RemoveAllListeners();
+        startARModeButton.onClick.RemoveAllListeners();
         foreach (var btn in categButtons)
         {
             btn.onClick.RemoveAllListeners();
@@ -65,6 +68,7 @@ public class AppManager : MonoBehaviour
     private void SubscribeEvents()
     {
         exploreButton.onClick.AddListener(OnExplorePress);
+        startARModeButton.onClick.AddListener(ARMode);
         categButtons[0].onClick.AddListener(OnAstroPress);
     }
 
@@ -95,6 +99,7 @@ public class AppManager : MonoBehaviour
 
     private void OnDescriptionOpen(EducationItem item)
     {
+        current3Dmodel = item.Model;
         itemsScreen.SetActive(false);
         descriptionScreen.SetActive(true);
         infoContent.text = String.Empty;
@@ -108,9 +113,15 @@ public class AppManager : MonoBehaviour
         it.SetActive(true);
     }
 
+    private void ARMode()
+    {
+        ARController.modelToSpawn = current3Dmodel;
+        SceneManager.LoadScene("ARMode");
+    }
+
     public void CreateAstroItems()
     {
         astroItems = new List<EducationItem>();
-        astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, "lorem ipsum blablabla"));
+        astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, ItemsInfo.earthInfo));
     }
 }

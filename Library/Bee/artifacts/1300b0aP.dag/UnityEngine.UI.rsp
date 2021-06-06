@@ -106,8 +106,8 @@
 -define:PACKAGE_UITOOLKIT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll"
--r:"/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll"
+-r:"/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll"
+-r:"/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AIModule.dll"
 -r:"/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll"

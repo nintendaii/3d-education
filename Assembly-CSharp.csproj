@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{e2fc9334-b743-189e-1e90-45992ba49850}</ProjectGuid>
+    <ProjectGuid>{ef77d2c1-4ba9-4909-484e-ae7b4eebb79a}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\ObjectRotation.cs" />
      <Compile Include="Assets\Scripts\ARController.cs" />
+     <Compile Include="Assets\Scripts\ItemsInfo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\3rParty\EarthRendering Free\Earth.shader" />
@@ -292,10 +293,10 @@
      <HintPath>/Users/daniel/Documents/UnityVersions/2021.1.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="MiscUtil">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Core/Dependencies/MiscUtil/MiscUtil.dll</HintPath>
      </Reference>
      <Reference Include="Antlr3.Runtime">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/PackageCache/com.unity.visualscripting@1.5.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Users/daniel/Documents/UnityVersions/2021.1.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -649,100 +650,100 @@
      <HintPath>/Users/daniel/Documents/UnityVersions/2021.1.3f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARKit">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="VSSettingsProvider">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARCore.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARKit.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Subsystem.Registration">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARSubsystems.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARCore">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARSubsystems">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARFoundation.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.ARFoundation">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
