@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARController : MonoBehaviour
 {
-    [SerializeField] public static GameObject modelToSpawn;
+    [SerializeField] private GameObject modelToSpawn;
     [SerializeField] private GameObject placementIndicator;
 
     private Pose placementPose;
@@ -15,11 +15,6 @@ public class ARController : MonoBehaviour
     private bool isPoseValid = false;
     void Start()
     {
-        if (NativeCamera.CheckPermission()==NativeCamera.Permission.ShouldAsk || NativeCamera.CheckPermission()==NativeCamera.Permission.Denied)
-        {
-            NativeCamera.RequestPermission();
-        }
-        
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
     }
     

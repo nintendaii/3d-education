@@ -46,7 +46,6 @@
      <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\ObjectRotation.cs" />
      <Compile Include="Assets\Scripts\ARController.cs" />
-     <Compile Include="Assets\Scripts\ItemsInfo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\3rParty\EarthRendering Free\Earth.shader" />
@@ -745,49 +744,8 @@
      <Reference Include="Unity.XR.ARFoundation">
      <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualEffectGraph.Runtime">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.HighDefinition.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Searcher.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3DE/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NativeCamera.Runtime.csproj">
-      <Project>{77432a7b-9b50-4f57-b26f-63d0a36ba828}</Project>
-      <Name>NativeCamera.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="NativeCamera.Editor.csproj">
-      <Project>{926d9e49-f275-b85f-45b4-798a82d8d24c}</Project>
-      <Name>NativeCamera.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
