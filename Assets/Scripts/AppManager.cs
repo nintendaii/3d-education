@@ -112,7 +112,5 @@ public class AppManager : MonoBehaviour
     {
         astroItems = new List<EducationItem>();
         astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, "lorem ipsum blablabla"));
-        float[] arr = {1f, 1f, 1f};
-        earth.GetComponent<ObjectRotation>().vector = arr;
     }
 }
