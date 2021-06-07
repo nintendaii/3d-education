@@ -119,7 +119,7 @@
 67-->/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:16:5-101
 68            android:name="unity.build-id"
 68-->/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:16:16-45
-69            android:value="412300e6-5b8a-4ee1-b7ac-4fc1ced7181b" />
+69            android:value="1045da08-89f4-46c6-993d-99b590d45594" />
 69-->/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:16:46-98
 70        <meta-data
 70-->/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:17:5-88

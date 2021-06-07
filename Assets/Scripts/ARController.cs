@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,7 +19,8 @@ public class ARController : MonoBehaviour
     private GameObject spawnedObject;
     private ARRaycastManager arRaycastManager;
     private bool isPoseValid = false;
-    private GameObject labels;
+    [CanBeNull] private GameObject labels;
+    [CanBeNull] private Transform lt;
     private bool isLabels = false;
     void Start()
     {
@@ -27,6 +29,11 @@ public class ARController : MonoBehaviour
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
         lablesButton.onClick.AddListener(SwitchLables);
         homeButton.onClick.AddListener(Home);
+        lt = modelToSpawn.transform.Find("Labels");
+        if (lt==null)
+        {
+            lablesButton.gameObject.SetActive(false);
+        }
     }
 
     private void SwitchLables()
@@ -75,13 +82,13 @@ public class ARController : MonoBehaviour
     private void PlaceObject()
     {
         spawnedObject = Instantiate(modelToSpawn, placementPose.position, placementPose.rotation);
-        labels = spawnedObject.transform.Find("Labels").gameObject;
-        if (labels==null)
-        {
-            lablesButton.gameObject.SetActive(false);
-        }
         float[] v0 = {0,0,0};
         spawnedObject.GetComponent<ObjectRotation>().vector = v0;
+        if (lt==null)
+        {
+            return;
+        }
+        labels = spawnedObject.transform.Find("Labels").gameObject;
     }
 
     private void Home()
