@@ -293,7 +293,6 @@
 -r:"Library/Bee/artifacts/1300b0aP.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aP.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
-"Assets/3rParty/EarthRendering Free/CameraCtrl.cs"
 "Assets/Scripts/AppManager.cs"
 "Assets/Scripts/ARController.cs"
 "Assets/Scripts/EducationItem.cs"

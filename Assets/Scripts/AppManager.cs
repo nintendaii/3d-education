@@ -39,6 +39,7 @@ public class AppManager : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] private GameObject earth = default;
     [SerializeField] private GameObject digestiveSys = default;
+    [SerializeField] private GameObject heart = default;
 
     [SerializeField] private GameObject itemPrefab = default;
     private GameObject current3Dmodel = default;
@@ -160,5 +161,6 @@ public class AppManager : MonoBehaviour
     {
         biologyItems = new List<EducationItem>();
         biologyItems.Add(new EducationItem("Digestive System", Categories.Biology, digestiveSys, ItemsInfo.earthInfo));
+        biologyItems.Add(new EducationItem("Heart", Categories.Biology, heart, ItemsInfo.earthInfo));
     }
 }

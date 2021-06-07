@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
@@ -78,7 +79,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1650}
+      Script: {instanceID: 1520}
+    - Class: 114
+      Script: {instanceID: 1570}
+    - Class: 114
+      Script: {instanceID: 1648}
+    - Class: 114
+      Script: {instanceID: 2512}
+    - Class: 114
+      Script: {instanceID: 2704}
     - Class: 114
       Script: {instanceID: 3120}
     - Class: 114
@@ -86,7 +95,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3542}
     - Class: 114
+      Script: {instanceID: 4796}
+    - Class: 114
+      Script: {instanceID: 5302}
+    - Class: 114
       Script: {instanceID: 5328}
+    - Class: 114
+      Script: {instanceID: 5454}
+    - Class: 114
+      Script: {instanceID: 5754}
     - Class: 114
       Script: {instanceID: 6038}
     - Class: 114
@@ -100,6 +117,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Main.unity:
     - Class: 1
@@ -133,19 +158,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1518}
+      Script: {instanceID: 1520}
     - Class: 114
-      Script: {instanceID: 1572}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 2110}
     - Class: 114
-      Script: {instanceID: 2246}
+      Script: {instanceID: 2244}
     - Class: 114
       Script: {instanceID: 2512}
     - Class: 114
       Script: {instanceID: 2704}
     - Class: 114
       Script: {instanceID: 3124}
+    - Class: 114
+      Script: {instanceID: 3380}
     - Class: 114
       Script: {instanceID: 3678}
     - Class: 114
@@ -175,6 +202,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -841,12 +870,6 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 1355d848a4e015b7d34a56af06faf4f2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraCtrl
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -889,7 +912,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 9bd1a1015371a5e5cdc6be5ab3d0ea92
+      Hash: 086c891f2f969df5daee27577aef15a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AppManager
@@ -1135,7 +1158,7 @@ ScriptsOnlyBuild:
     className: ARCoreLoader
   - hash:
       serializedVersion: 2
-      Hash: a25b2cdcbb5d72e046b7b95e7b811fa6
+      Hash: 595e863d7f3d54ea36df905fded7bac4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARController
