@@ -17,6 +17,7 @@ public class AppManager : MonoBehaviour
                                     
     [Header("Main Menu Screen")]    
     [SerializeField] private Button exploreButton = default;
+    [SerializeField] private Button homeButton = default;
                                     
     [Header("Categories Screen")] 
     [SerializeField] private Button[] categButtons = default;
@@ -37,6 +38,7 @@ public class AppManager : MonoBehaviour
     
     [Header("Prefabs")]
     [SerializeField] private GameObject earth = default;
+    [SerializeField] private GameObject digestiveSys = default;
 
     [SerializeField] private GameObject itemPrefab = default;
     private GameObject current3Dmodel = default;
@@ -48,6 +50,7 @@ public class AppManager : MonoBehaviour
         descriptionScreen.SetActive(false);
         SubscribeEvents();
         CreateAstroItems();
+        CreateBiologyItems();
     }   
 
     private void OnDisable()
@@ -59,6 +62,7 @@ public class AppManager : MonoBehaviour
     {
         exploreButton.onClick.RemoveAllListeners();
         startARModeButton.onClick.RemoveAllListeners();
+        homeButton.onClick.RemoveAllListeners();
         foreach (var btn in categButtons)
         {
             btn.onClick.RemoveAllListeners();
@@ -69,9 +73,18 @@ public class AppManager : MonoBehaviour
     {
         exploreButton.onClick.AddListener(OnExplorePress);
         startARModeButton.onClick.AddListener(ARMode);
+        homeButton.onClick.AddListener(Home);
         categButtons[0].onClick.AddListener(OnAstroPress);
+        categButtons[1].onClick.AddListener(OnBiologyPress);
     }
 
+    private void Home()
+    {
+        categoriesScreen.SetActive(true);
+        mainScreen.SetActive(false);
+        itemsScreen.SetActive(false);
+        descriptionScreen.SetActive(false);
+    }
     private void OnExplorePress()
     {
         mainScreen.SetActive(false);
@@ -96,6 +109,25 @@ public class AppManager : MonoBehaviour
             btn.onClick.AddListener(delegate { OnDescriptionOpen(item); });
         }
     }
+    private void OnBiologyPress()
+    {
+        categoriesScreen.SetActive(false);
+        itemsScreen.SetActive(true);
+        foreach (Transform child in itemsList.transform) {
+            Destroy(child.gameObject);
+        }
+        foreach (var item in biologyItems)
+        {
+            var it = Instantiate(itemPrefab);
+            it.transform.SetParent(itemsList.transform,false);
+            it.SetActive(true);
+            it.GetComponentInChildren<TMP_Text>().text = item.Title;
+            Button btn = it.GetComponent<Button>();
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(delegate { OnDescriptionOpen(item); });
+        }
+    }
+    
 
     private void OnDescriptionOpen(EducationItem item)
     {
@@ -123,5 +155,10 @@ public class AppManager : MonoBehaviour
     {
         astroItems = new List<EducationItem>();
         astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, ItemsInfo.earthInfo));
+    }
+    public void CreateBiologyItems()
+    {
+        biologyItems = new List<EducationItem>();
+        biologyItems.Add(new EducationItem("Digestive System", Categories.Biology, digestiveSys, ItemsInfo.earthInfo));
     }
 }

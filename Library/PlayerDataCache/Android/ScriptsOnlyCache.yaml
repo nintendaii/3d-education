@@ -90,8 +90,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6038}
     - Class: 114
-      Script: {instanceID: 6180}
-    - Class: 114
       Script: {instanceID: 6694}
     - Class: 114
       Script: {instanceID: 6754}
@@ -891,7 +889,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 8390d07ea81e1882d82c88655dc77b95
+      Hash: 9bd1a1015371a5e5cdc6be5ab3d0ea92
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AppManager
@@ -1137,7 +1135,7 @@ ScriptsOnlyBuild:
     className: ARCoreLoader
   - hash:
       serializedVersion: 2
-      Hash: 7001c3c13329899e6400defa9cfdda52
+      Hash: a25b2cdcbb5d72e046b7b95e7b811fa6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARController

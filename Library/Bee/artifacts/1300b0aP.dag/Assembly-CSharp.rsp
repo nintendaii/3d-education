@@ -297,6 +297,7 @@
 "Assets/Scripts/AppManager.cs"
 "Assets/Scripts/ARController.cs"
 "Assets/Scripts/EducationItem.cs"
+"Assets/Scripts/ItemsInfo.cs"
 "Assets/Scripts/ObjectRotation.cs"
 -langversion:8.0
 

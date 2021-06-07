@@ -41,12 +41,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ItemsInfo.cs" />
      <Compile Include="Assets\Scripts\EducationItem.cs" />
      <Compile Include="Assets\3rParty\EarthRendering Free\CameraCtrl.cs" />
      <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\ObjectRotation.cs" />
      <Compile Include="Assets\Scripts\ARController.cs" />
-     <Compile Include="Assets\Scripts\ItemsInfo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\3rParty\EarthRendering Free\Earth.shader" />
