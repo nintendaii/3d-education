@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chemistry
+  m_text: Architecture
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
   m_sharedMaterial: {fileID: -7311869876932876536, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1b19082e971f6482b9cca0b4b9bf5cf9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9bdf387ec18524603a76a24eee2cb011, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 107eed1c10bbf460e8f1c44ec8b221c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf9c6af78fb384b5e95d7ec6eedd57bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Biology
+  m_text: Anatomy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
   m_sharedMaterial: {fileID: -7311869876932876536, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
@@ -1485,6 +1485,9 @@ MonoBehaviour:
   earth: {fileID: 663825674624416316, guid: f06ecd2b8e7764957a1b2db0fa3f279d, type: 3}
   digestiveSys: {fileID: 3626547599552614484, guid: af9e02bb11ae74ea29ffa069dea073ed, type: 3}
   heart: {fileID: 454640927306041489, guid: 3100c3057b656428d95a4c1639bd3232, type: 3}
+  atom: {fileID: 5376809730828534760, guid: 40a6a5f26db224c9caacad5a2dc47275, type: 3}
+  louis: {fileID: 3359546154122013911, guid: 687633559a4a841a592fb7f551f4cfb2, type: 3}
+  chichen: {fileID: 3720204420797312406, guid: d71e1ccdc292f46cb82e55c70479e4d1, type: 3}
   itemPrefab: {fileID: 3903239644137634019, guid: 0748c91ad971945629154c5e441dbd2e, type: 3}
 --- !u!4 &1049832240
 Transform:
@@ -2017,7 +2020,7 @@ GameObject:
   - component: {fileID: 1313351860}
   - component: {fileID: 1313351859}
   m_Layer: 5
-  m_Name: ChemistryCat
+  m_Name: ArchitectureCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2180,7 +2183,7 @@ GameObject:
   - component: {fileID: 1464702477}
   - component: {fileID: 1464702476}
   m_Layer: 5
-  m_Name: BiologyCat
+  m_Name: AnatomyCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2695,7 +2698,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Astronomy
+  m_text: Geography
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
   m_sharedMaterial: {fileID: -7311869876932876536, guid: a9f27cb8220ff4869978b75dd05377a1, type: 2}
@@ -3315,7 +3318,7 @@ GameObject:
   - component: {fileID: 1999087272}
   - component: {fileID: 1999087271}
   m_Layer: 5
-  m_Name: AstronomyCat
+  m_Name: GeographyCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

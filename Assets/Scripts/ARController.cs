@@ -76,6 +76,10 @@ public class ARController : MonoBehaviour
     {
         spawnedObject = Instantiate(modelToSpawn, placementPose.position, placementPose.rotation);
         labels = spawnedObject.transform.Find("Labels").gameObject;
+        if (labels==null)
+        {
+            lablesButton.gameObject.SetActive(false);
+        }
         float[] v0 = {0,0,0};
         spawnedObject.GetComponent<ObjectRotation>().vector = v0;
     }

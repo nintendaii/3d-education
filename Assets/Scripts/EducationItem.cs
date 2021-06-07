@@ -21,8 +21,8 @@ namespace DefaultNamespace
     public enum Categories
     {
         Astronomy,
-        Biology,
+        Anatotmy,
         Physics,
-        Chemistry
+        Architecture
     }
 }

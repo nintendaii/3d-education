@@ -22,10 +22,10 @@ public class AppManager : MonoBehaviour
     [Header("Categories Screen")] 
     [SerializeField] private Button[] categButtons = default;
 
-    private List<EducationItem> astroItems;
-    private List<EducationItem> biologyItems;
-    private List<EducationItem> physicstems;
-    private List<EducationItem> chemistryItems;
+    private List<EducationItem> geographyItems;
+    private List<EducationItem> anatomyItems;
+    private List<EducationItem> physicsItems;
+    private List<EducationItem> archItems;
     [Header("Items Screen")] 
     [SerializeField] private GameObject itemsList = default;
 
@@ -40,6 +40,9 @@ public class AppManager : MonoBehaviour
     [SerializeField] private GameObject earth = default;
     [SerializeField] private GameObject digestiveSys = default;
     [SerializeField] private GameObject heart = default;
+    [SerializeField] private GameObject atom = default;
+    [SerializeField] private GameObject louis = default;
+    [SerializeField] private GameObject chichen = default;
 
     [SerializeField] private GameObject itemPrefab = default;
     private GameObject current3Dmodel = default;
@@ -50,8 +53,10 @@ public class AppManager : MonoBehaviour
         itemsScreen.SetActive(false);
         descriptionScreen.SetActive(false);
         SubscribeEvents();
-        CreateAstroItems();
-        CreateBiologyItems();
+        CreateAnatomyItems();
+        CreateGeographyItems();
+        CreatePhysicsItems();
+        CreateArchitectureItems();
     }   
 
     private void OnDisable()
@@ -75,8 +80,10 @@ public class AppManager : MonoBehaviour
         exploreButton.onClick.AddListener(OnExplorePress);
         startARModeButton.onClick.AddListener(ARMode);
         homeButton.onClick.AddListener(Home);
-        categButtons[0].onClick.AddListener(OnAstroPress);
-        categButtons[1].onClick.AddListener(OnBiologyPress);
+        categButtons[0].onClick.AddListener(OnGeographyPress);
+        categButtons[1].onClick.AddListener(OnAnatomyPress);
+        categButtons[2].onClick.AddListener(OnPhysicsPress);
+        categButtons[3].onClick.AddListener(OnArchitecturePress);
     }
 
     private void Home()
@@ -92,14 +99,14 @@ public class AppManager : MonoBehaviour
         categoriesScreen.SetActive(true);
     }
 
-    private void OnAstroPress()
+    private void OnGeographyPress()
     {
         categoriesScreen.SetActive(false);
         itemsScreen.SetActive(true);
         foreach (Transform child in itemsList.transform) {
             Destroy(child.gameObject);
         }
-        foreach (var item in astroItems)
+        foreach (var item in geographyItems)
         {
             var it = Instantiate(itemPrefab);
             it.transform.SetParent(itemsList.transform,false);
@@ -110,14 +117,50 @@ public class AppManager : MonoBehaviour
             btn.onClick.AddListener(delegate { OnDescriptionOpen(item); });
         }
     }
-    private void OnBiologyPress()
+    private void OnAnatomyPress()
     {
         categoriesScreen.SetActive(false);
         itemsScreen.SetActive(true);
         foreach (Transform child in itemsList.transform) {
             Destroy(child.gameObject);
         }
-        foreach (var item in biologyItems)
+        foreach (var item in anatomyItems)
+        {
+            var it = Instantiate(itemPrefab);
+            it.transform.SetParent(itemsList.transform,false);
+            it.SetActive(true);
+            it.GetComponentInChildren<TMP_Text>().text = item.Title;
+            Button btn = it.GetComponent<Button>();
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(delegate { OnDescriptionOpen(item); });
+        }
+    }
+    private void OnPhysicsPress()
+    {
+        categoriesScreen.SetActive(false);
+        itemsScreen.SetActive(true);
+        foreach (Transform child in itemsList.transform) {
+            Destroy(child.gameObject);
+        }
+        foreach (var item in physicsItems)
+        {
+            var it = Instantiate(itemPrefab);
+            it.transform.SetParent(itemsList.transform,false);
+            it.SetActive(true);
+            it.GetComponentInChildren<TMP_Text>().text = item.Title;
+            Button btn = it.GetComponent<Button>();
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(delegate { OnDescriptionOpen(item); });
+        }
+    }
+    private void OnArchitecturePress()
+    {
+        categoriesScreen.SetActive(false);
+        itemsScreen.SetActive(true);
+        foreach (Transform child in itemsList.transform) {
+            Destroy(child.gameObject);
+        }
+        foreach (var item in archItems)
         {
             var it = Instantiate(itemPrefab);
             it.transform.SetParent(itemsList.transform,false);
@@ -152,15 +195,26 @@ public class AppManager : MonoBehaviour
         SceneManager.LoadScene("ARMode");
     }
 
-    public void CreateAstroItems()
+    public void CreateGeographyItems()
     {
-        astroItems = new List<EducationItem>();
-        astroItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, ItemsInfo.earthInfo));
+        geographyItems = new List<EducationItem>();
+        geographyItems.Add(new EducationItem("Earth", Categories.Astronomy, earth, ItemsInfo.earthInfo));
     }
-    public void CreateBiologyItems()
+    public void CreateAnatomyItems()
     {
-        biologyItems = new List<EducationItem>();
-        biologyItems.Add(new EducationItem("Digestive System", Categories.Biology, digestiveSys, ItemsInfo.earthInfo));
-        biologyItems.Add(new EducationItem("Heart", Categories.Biology, heart, ItemsInfo.earthInfo));
+        anatomyItems = new List<EducationItem>();
+        anatomyItems.Add(new EducationItem("Digestive System", Categories.Anatotmy, digestiveSys, ItemsInfo.digestiveSys));
+        anatomyItems.Add(new EducationItem("Heart", Categories.Anatotmy, heart, ItemsInfo.heart));
+    }
+    public void CreatePhysicsItems()
+    {
+        physicsItems = new List<EducationItem>();
+        physicsItems.Add(new EducationItem("Atom", Categories.Physics, atom, ItemsInfo.atom));
+    }
+    public void CreateArchitectureItems()
+    {
+        archItems = new List<EducationItem>();
+        archItems.Add(new EducationItem("Louis XIV de France", Categories.Architecture, louis, ItemsInfo.louis));
+        archItems.Add(new EducationItem("Chichen Itza", Categories.Architecture, chichen, ItemsInfo.chichen));
     }
 }
