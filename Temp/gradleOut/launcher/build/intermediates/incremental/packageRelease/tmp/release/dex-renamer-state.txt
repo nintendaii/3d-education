@@ -1,4 +1,4 @@
-#Mon Jun 07 20:08:52 EEST 2021
+#Tue Jun 08 11:47:48 EEST 2021
 base.0=/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/dex/release/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

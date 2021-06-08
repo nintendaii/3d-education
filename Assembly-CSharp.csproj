@@ -682,6 +682,9 @@
      <Reference Include="Unity.XR.ARCore.Editor">
      <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.XR.ARKit.Editor">
      <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
      </Reference>
@@ -741,9 +744,6 @@
      </Reference>
      <Reference Include="Unity.XR.ARFoundation">
      <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Users/daniel/Documents/Projects/3d-education/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

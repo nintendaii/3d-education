@@ -1,28 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-fr_values-fr.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-fr/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,238,290,445,607",
-                        "endColumns": "47,51,154,161,92",
-                        "endOffsets": "237,289,444,606,699"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,107,163,322,488",
-                        "endColumns": "51,55,158,165,96",
-                        "endOffsets": "102,158,317,483,580"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-en-rIE_values-en-rIE.arsc.flat",
             "map": [
                 {
@@ -40,6 +18,28 @@
                         "startOffsets": "55,106,161,287,413",
                         "endColumns": "50,54,125,125,87",
                         "endOffsets": "101,156,282,408,496"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-fr_values-fr.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-fr/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,238,290,445,607",
+                        "endColumns": "47,51,154,161,92",
+                        "endOffsets": "237,289,444,606,699"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,107,163,322,488",
+                        "endColumns": "51,55,158,165,96",
+                        "endOffsets": "102,158,317,483,580"
                     }
                 }
             ]
@@ -89,23 +89,23 @@
             ]
         },
         {
-            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-nb_values-nb.arsc.flat",
+            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-ja_values-ja.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-nb/values.xml",
+                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-ja/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,237,288,406,533",
-                        "endColumns": "46,50,117,126,86",
-                        "endOffsets": "236,287,405,532,619"
+                        "startOffsets": "190,236,281,378,478",
+                        "endColumns": "45,44,96,99,80",
+                        "endOffsets": "235,280,377,477,558"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,106,161,283,414",
-                        "endColumns": "50,54,121,130,90",
-                        "endOffsets": "101,156,278,409,500"
+                        "startOffsets": "55,105,154,255,359",
+                        "endColumns": "49,48,100,103,84",
+                        "endOffsets": "100,149,250,354,439"
                     }
                 }
             ]
@@ -133,23 +133,23 @@
             ]
         },
         {
-            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-ja_values-ja.arsc.flat",
+            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-nb_values-nb.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-ja/values.xml",
+                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-nb/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,236,281,378,478",
-                        "endColumns": "45,44,96,99,80",
-                        "endOffsets": "235,280,377,477,558"
+                        "startOffsets": "190,237,288,406,533",
+                        "endColumns": "46,50,117,126,86",
+                        "endOffsets": "236,287,405,532,619"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,105,154,255,359",
-                        "endColumns": "49,48,100,103,84",
-                        "endOffsets": "100,149,250,354,439"
+                        "startOffsets": "55,106,161,283,414",
+                        "endColumns": "50,54,121,130,90",
+                        "endOffsets": "101,156,278,409,500"
                     }
                 }
             ]
@@ -245,28 +245,6 @@
             ]
         },
         {
-            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-fr-rCH_values-fr-rCH.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-fr-rCH/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "194,242,294,449,611",
-                        "endColumns": "47,51,154,161,92",
-                        "endOffsets": "241,293,448,610,703"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,107,163,322,488",
-                        "endColumns": "51,55,158,165,96",
-                        "endOffsets": "102,158,317,483,580"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-sl_values-sl.arsc.flat",
             "map": [
                 {
@@ -284,6 +262,28 @@
                         "startOffsets": "55,108,161,296,433",
                         "endColumns": "52,52,134,136,87",
                         "endOffsets": "103,156,291,428,516"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-fr-rCH_values-fr-rCH.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-fr-rCH/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "194,242,294,449,611",
+                        "endColumns": "47,51,154,161,92",
+                        "endOffsets": "241,293,448,610,703"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,107,163,322,488",
+                        "endColumns": "51,55,158,165,96",
+                        "endOffsets": "102,158,317,483,580"
                     }
                 }
             ]
@@ -421,28 +421,6 @@
             ]
         },
         {
-            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-pl_values-pl.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-pl/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,237,285,394,505",
-                        "endColumns": "46,47,108,110,80",
-                        "endOffsets": "236,284,393,504,585"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,106,158,271,386",
-                        "endColumns": "50,51,112,114,84",
-                        "endOffsets": "101,153,266,381,466"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-b+es+419_values-b+es+419.arsc.flat",
             "map": [
                 {
@@ -460,6 +438,28 @@
                         "startOffsets": "55,108,164,292,428",
                         "endColumns": "52,55,127,135,92",
                         "endOffsets": "103,159,287,423,516"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/daniel/Documents/Projects/3d-education/Temp/gradleOut/launcher/build/intermediates/res/merged/release/values-pl_values-pl.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/daniel/.gradle/caches/transforms-2/files-2.1/6b2eff82af4ce35dab4257dc55bbce1f/arcore_client/res/values-pl/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,237,285,394,505",
+                        "endColumns": "46,47,108,110,80",
+                        "endOffsets": "236,284,393,504,585"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,106,158,271,386",
+                        "endColumns": "50,51,112,114,84",
+                        "endOffsets": "101,153,266,381,466"
                     }
                 }
             ]

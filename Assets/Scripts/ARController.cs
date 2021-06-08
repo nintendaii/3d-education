@@ -10,7 +10,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARController : MonoBehaviour
 {
-    [SerializeField] public static GameObject modelToSpawn;
+    public static GameObject modelToSpawn;
     [SerializeField] private GameObject placementIndicator;
     [SerializeField] private Button lablesButton;
     [SerializeField] private Button homeButton;
@@ -84,10 +84,6 @@ public class ARController : MonoBehaviour
         spawnedObject = Instantiate(modelToSpawn, placementPose.position, placementPose.rotation);
         float[] v0 = {0,0,0};
         spawnedObject.GetComponent<ObjectRotation>().vector = v0;
-        if (lt==null)
-        {
-            return;
-        }
         labels = spawnedObject.transform.Find("Labels").gameObject;
     }
 
